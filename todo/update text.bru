@@ -1,0 +1,18 @@
+meta {
+  name: update text
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/todos/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "text": "HALLO",
+    "done": false
+  }
+}

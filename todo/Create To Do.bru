@@ -1,0 +1,18 @@
+meta {
+  name: Create To Do
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/todos
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "text": "Learn Echo",
+    "done": false
+  }
+}
