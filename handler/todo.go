@@ -34,8 +34,8 @@ func HandleTodos(w http.ResponseWriter, r *http.Request) {
 			json.NewEncoder(w).Encode(map[string]string{
 				"message": "Method not allowed",
 			})
-			return
 		}
+		return
 	}
 
 	//example: /todos/123
@@ -64,9 +64,7 @@ func HandleTodos(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(map[string]string{
 			"message": "Method not allowed",
 		})
-		return
 	}
-
 }
 
 // get list
